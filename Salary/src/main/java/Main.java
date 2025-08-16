@@ -10,10 +10,11 @@ public class Main {
                 new Employee("Carlos", 40, 5800.0)
         );
 
+//        SalaryService.adjustSalary(employees.getFirst(), 50.0);
 
+        employees.forEach(e -> SalaryService.adjustSalary(e, 50.0));
 
-
-//        employees.forEach(System.out::println);
+        employees.forEach(System.out::println);
 //
 //        employees.stream()
 //                .forEach(System.out::println);
