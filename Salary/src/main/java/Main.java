@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         List<Employee> employees = List.of(
-                new Employee("João", 30, 3500.0),
+                new Employee("João", 30, 3000.0),
                 new Employee("Maria", 25, 4200.0),
                 new Employee("Carlos", 40, 5800.0)
         );
