@@ -20,19 +20,22 @@ public class StringService {
         Integer windowPosition = null;
         int counterSentence = 0;
 
-        while ( MyLength(sentence) != counterSentence - 1){
+        while ( MyLength(sentence) - 2  != counterSentence ){
             int counterWindow = 0;
-            while ( MyLength(window) != counterWindow - 1 ){
+            while ( MyLength(window) - 2  != counterWindow ){
                 if(window[counterWindow].equals(sentence[counterSentence])){
 
-                    if(counterWindow == window.length){
+                    if(counterWindow  == window.length -1){
                         windowPosition = counterSentence - counterWindow;
+                        break;
                     }
                 } else {
                     break;
                 }
                 counterWindow ++;
             }
+            if(windowPosition != null)
+                break;
             counterSentence ++;
             }
 

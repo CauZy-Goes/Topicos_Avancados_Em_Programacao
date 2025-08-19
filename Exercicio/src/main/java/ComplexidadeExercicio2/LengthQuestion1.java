@@ -1,6 +1,6 @@
 package ComplexidadeExercicio2;
 
-public class LengthQuestao1 {
+public class LengthQuestion1 {
 
     public static void main(String[] args) {
 
