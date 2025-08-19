@@ -10,5 +10,6 @@ public class LengthQuestao1 {
         vetor[vetorMaxPositions - 1] = ".";
 
         System.out.println(StringService.MyLength(vetor));
+
     }
 }
