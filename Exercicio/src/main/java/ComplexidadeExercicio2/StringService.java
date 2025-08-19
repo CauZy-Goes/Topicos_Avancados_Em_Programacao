@@ -25,7 +25,7 @@ public class StringService {
             while ( MyLength(window) - 2  != counterWindow ){
                 if(window[counterWindow].equals(sentence[counterSentence])){
 
-                    if(counterWindow  == window.length -1){
+                    if(counterWindow  == MyLength(window) - 3){
                         windowPosition = counterSentence - counterWindow;
                         break;
                     }

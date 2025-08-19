@@ -20,8 +20,8 @@ public class IndexOfQuestion2 {
 
         String[] window = new String[3];
 
-        window[0] = "c";
-        window[1] = "d";
+        window[0] = "b";
+        window[1] = "y";
         window[2] = ".";
 
 
