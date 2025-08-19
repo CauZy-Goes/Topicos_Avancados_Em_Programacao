@@ -18,11 +18,17 @@ public class IndexOfQuestion2 {
         sentence[9] = ".";
 
 
-        String[] window = new String[3];
+//        String[] window = new String[3]; sentença com 2 letras
+//
+//        window[0] = "h";
+//        window[1] = "o";
+//        window[2] = ".";
 
-        window[0] = "b";
-        window[1] = "y";
-        window[2] = ".";
+        String[] window = new String[4]; // sentença com 3 letras
+        window[0] = "g";
+        window[1] = "h";
+        window[2] = "o";
+        window[3] = ".";
 
 
         System.out.println(StringService.MyIndexOf(sentence, window));

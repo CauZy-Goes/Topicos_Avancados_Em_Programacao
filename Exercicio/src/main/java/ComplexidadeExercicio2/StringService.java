@@ -19,24 +19,33 @@ public class StringService {
     public static Integer MyIndexOf(String [] sentence, String [] window){
         Integer windowPosition = null;
         int counterSentence = 0;
+        int counterWindow = 0;
 
-        while ( MyLength(sentence) - 2  != counterSentence ){
-            int counterWindow = 0;
-            while ( MyLength(window) - 2  != counterWindow ){
+
+        while ( MyLength(sentence) - 1  != counterSentence ){
+
+
+            while ( MyLength(window) - 1 != counterWindow ){
+                System.out.println(counterSentence + "E " + counterWindow);
                 if(window[counterWindow].equals(sentence[counterSentence])){
-
-                    if(counterWindow  == MyLength(window) - 3){
+                    System.out.println(counterSentence + "z " + counterWindow);
+                    if(counterWindow  == MyLength(window) - 2){
+                        System.out.println(counterSentence + "A " + counterWindow);
                         windowPosition = counterSentence - counterWindow;
                         break;
                     }
+                    counterWindow ++;
+                    break;
                 } else {
+                     counterWindow = 0;
                     break;
                 }
-                counterWindow ++;
             }
+
+            counterSentence ++;
+
             if(windowPosition != null)
                 break;
-            counterSentence ++;
             }
 
         return windowPosition;
