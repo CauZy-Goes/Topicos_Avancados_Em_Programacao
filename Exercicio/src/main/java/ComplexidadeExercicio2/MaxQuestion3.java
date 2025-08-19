@@ -1,22 +1,25 @@
 package ComplexidadeExercicio2;
 
+import java.util.Random;
+
 public class MaxQuestion3 {
 
     public static void main(String[] args) {
 
-        Integer[] integerVetor = new Integer[10];
+        int vetorLength = 100;
 
-        integerVetor[0] = 1;
-        integerVetor[1] =  44;
-        integerVetor[2] = 3;
-        integerVetor[3] = 5;
-        integerVetor[4] = 8;
-        integerVetor[5] = 99;
-        integerVetor[6] = 200 ;
-        integerVetor[7] = 343;
-        integerVetor[8] = 4;
-        integerVetor[9] = 5;
+        Integer[] integerVetor = new Integer[vetorLength];
+        Random random = new Random();
 
-        System.out.println(StringService.MyMax(integerVetor));
+        for (int i = 0; i < integerVetor.length; i++) {
+            integerVetor[i] = random.nextInt(1000);
+        }
+
+        for (int i = 0; i < integerVetor.length; i++) {
+            System.out.println("Posição " + i + ": " + integerVetor[i]);
+        }
+        System.out.println();
+
+        System.out.println("O maior valor do array é : " + StringService.MyMax(integerVetor, vetorLength));
     }
 }

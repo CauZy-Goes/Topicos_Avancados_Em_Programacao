@@ -51,5 +51,17 @@ public class StringService {
         return windowPosition;
     }
 
+    public static Integer MyMax(Integer [] integerVetor, int vetorLength){
+        int maxValue = 0;
+        int counter = 0;
+
+        while ( counter <  vetorLength ){
+            if(maxValue <= integerVetor[counter])
+                maxValue = integerVetor[counter];
+            counter ++;
+        }
+
+        return maxValue;
+    }
 }
 
